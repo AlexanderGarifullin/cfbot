@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: cfbot
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER_NAME}
+    password: ${DB_PASS}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+bot:
+  telegram:
+    username: ${BOT_USER_NAME}
+    token: ${BOT_TOKEN}
