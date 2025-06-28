@@ -9,7 +9,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 
 @Configuration
-public class RestConfig {
+public class Config {
 
     @Bean
     public RestTemplate restTemplate() {
