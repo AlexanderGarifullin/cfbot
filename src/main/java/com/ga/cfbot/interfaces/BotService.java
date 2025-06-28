@@ -1,6 +1,6 @@
 package com.ga.cfbot.interfaces;
 
-import com.ga.cfbot.application.service.CodeforcesApiService;
+import com.ga.cfbot.infrastructure.codeforces.CodeforcesApiService;
 import com.ga.cfbot.application.service.GroupService;
 import com.ga.cfbot.application.service.MembershipService;
 import com.ga.cfbot.domain.model.Group;

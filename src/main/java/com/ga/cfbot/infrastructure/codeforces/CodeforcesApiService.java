@@ -1,6 +1,6 @@
-package com.ga.cfbot.application.service;
+package com.ga.cfbot.infrastructure.codeforces;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.ga.cfbot.infrastructure.codeforces.dto.ApiResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -24,17 +24,5 @@ public class CodeforcesApiService {
             return null;
         }
         return null;
-    }
-
-    @JsonIgnoreProperties(ignoreUnknown = true)
-    private static class ApiResponse {
-        public String status;
-        public CfUser[] result;
-    }
-
-    @JsonIgnoreProperties(ignoreUnknown = true)
-    private static class CfUser {
-        public String handle;
-        public Integer rating;
     }
 }
