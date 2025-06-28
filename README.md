@@ -7,7 +7,7 @@
 3. Посмотреть рейтинги пользователей в группе.
 
 ## Стек:
-1. Java 21 + Spring Boot
+1. Java 21 + Spring Boot + Gradle
 2. PostgresSQL + Liquibase + Spring Data
 3. Telegram bot starter
 4. Lombok
