@@ -22,13 +22,6 @@ public class GroupService {
     }
 
     @Transactional
-    public void rename(Long id, String newName) {
-        Group g = repo.findById(id).orElseThrow();
-        g.setName(newName);
-        repo.save(g);
-    }
-
-    @Transactional
     public void delete(Long id) {
         repo.deleteById(id);
     }
